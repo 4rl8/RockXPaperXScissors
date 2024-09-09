@@ -19,9 +19,9 @@ function computerChoice() {
   } else return "scissors";
 }
 
-const compChoice = computerChoice();
 
 function humanChooseRock() {
+  const compChoice = computerChoice();
   parent.innerHTML = `
     <div class="Choices">
 <div class="Your-Choice">
@@ -40,6 +40,7 @@ function humanChooseRock() {
 rock.addEventListener("click", humanChooseRock);
 
 function humanChoosePaper() {
+  const compChoice = computerChoice();
   parent.innerHTML = `
     <div class="Choices">
 <div class="Your-Choice">
@@ -59,6 +60,7 @@ function humanChoosePaper() {
 paper.addEventListener("click", humanChoosePaper);
 
 function humanChooseScissors() {
+  const compChoice = computerChoice();
   parent.innerHTML = `
       <div class="Choices">
   <div class="Your-Choice">
